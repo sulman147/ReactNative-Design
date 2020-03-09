@@ -1,8 +1,7 @@
 import React from "react";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
-// import AppNavigator from "./Navigator/AppNavigator";
-import MyTab from "./Navigator/TabNavigator";
+import MyTabs from "./Navigator/TabNavigator";
 
 const initialState = {
   action: "",
@@ -25,7 +24,7 @@ const store = createStore(reducer);
 
 const App = () => (
   <Provider store={store}>
-    <MyTab />
+    <MyTabs />
   </Provider>
 );
 
